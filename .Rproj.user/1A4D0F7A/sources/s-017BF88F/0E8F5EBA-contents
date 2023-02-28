@@ -1,0 +1,16 @@
+$-- Necessary content to creates the bibliography.
+$-- Bibliography style is defined in the main template. Use `biblio-style` YAML key to customize the .bst file for natbib.
+$-- If your CLS file already define a style file, then set `biblio-config: false` to deactivate the main template configuration, otherwise there could be a conflict.
+$--
+
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{$if(biblio-style)$$biblio-style$$else$plainnat$endif$}
+$endif$
+$if(biblatex)$
+\usepackage$if(biblio-style)$[style=$biblio-style$]$endif${biblatex}
+$if(biblatexoptions)$\ExecuteBibliographyOptions{$for(biblatexoptions)$$biblatexoptions$$sep$,$endfor$}$endif$
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
