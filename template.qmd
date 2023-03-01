@@ -13,6 +13,7 @@ fontawesome: yes
 nocite: '@*'
 bibliography_peer: peer_bib.bib
 bibliography_other: other_bib.bib
+citeproc: false
 ---
 
 # Employment
