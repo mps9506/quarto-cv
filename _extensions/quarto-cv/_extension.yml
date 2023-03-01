@@ -5,11 +5,13 @@ quarto-required: ">=1.2.0"
 contributes:
   formats:
     pdf:
-      pdf-engine: xelatex
+      pdf-engine: lualatex
       toc: false
       linkcolor: blue
       urlcolor: blue
       geometry: margin=1in
+      filters:
+        - multiple-bibliographies
       include-in-header: header.tex
       template: quarto-cv.tex
       template-partials:
