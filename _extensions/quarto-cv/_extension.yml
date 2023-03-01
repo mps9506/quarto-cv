@@ -11,7 +11,7 @@ contributes:
       urlcolor: blue
       geometry: margin=1in
       filters:
-        - section-bibliographies
+        - section-bibliographies.lua
       include-in-header: header.tex
       template: quarto-cv.tex
       template-partials:
