@@ -15,11 +15,21 @@ bibliography_peer: peer_bib.bib
 bibliography_other: other_bib.bib
 ---
 
-## Introduction
+# Employment
 
-*TODO* Create an example file that demonstrates the formatting and features of your format.
+*Arthur Guinness & Son*
 
-## More Information
+Chief Brewer (Park Royal) \hfill 1935-1937
 
-You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html>
+Researcher (Dublin) \hfill 1899-1935
+
+# Education
+
+*New College, Oxford University*, B.A. Chemistry \hfill 1899
+
+# Publications
+
+::: {#refs_peer}
+:::
+
 
