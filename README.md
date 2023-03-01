@@ -11,7 +11,7 @@ on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetempl
 quarto install template mps9506/quarto-cv
 ```
 
-This will install the template for use with exisiting Quarto projects or documents.
+This will install the template for use with existing Quarto projects or documents.
 
 *or* To install the extension and create an example qmd file and project (easiest way to start):
 
@@ -56,7 +56,7 @@ web: web address (no `https://`)
 
 ### Bibliographies
 
-The template include a lua filter to easily incorporate multiple bibliographies using `.bib` files if you choose to manage publications this way. This is a good option for separating out book/chapter, journal articles, white papers, datasets, and software.
+The template includes a lua filter to easily incorporate multiple bibliographies using `.bib` files if you choose to manage publications this way. This is a good option for separating out book/chapter, journal articles, white papers, datasets, and software.
 
 In the document yaml header simply point to your `.bib` files and provide a unique name:
 
