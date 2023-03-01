@@ -8,12 +8,16 @@ phone: 123-456-7890
 address: "Guinness Brewery · Park Royal · London NW10 7RR, UK"
 email: guinness@consumer-care.net
 fontsize: 11pt
-github: github
+#github: github # github account
+orcid: 0000-0002-1825-0097 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: quarto.org
 fontawesome: yes
 nocite: '@*'
 bibliography_peer: peer_bib.bib
 bibliography_other: other_bib.bib
-citeproc: false
+csl: https://www.zotero.org/styles/apa-cv?source=1
 ---
 
 # Employment
@@ -33,4 +37,12 @@ Researcher (Dublin) \hfill 1899-1935
 ::: {#refs_peer}
 :::
 
+# Technical Reports
 
+::: {#refs_other}
+:::
+
+
+# References
+
+Available upon request, though likely would include Karl Pearson and Ronald A. Fisher.
