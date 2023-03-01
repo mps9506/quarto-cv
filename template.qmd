@@ -17,7 +17,7 @@ fontawesome: yes
 nocite: '@*'
 bibliography_peer: peer_bib.bib
 bibliography_other: other_bib.bib
-csl: https://www.zotero.org/styles/apa-cv?source=1
+csl: apa-cv.csl
 ---
 
 # Employment
