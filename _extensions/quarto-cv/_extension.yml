@@ -6,6 +6,7 @@ contributes:
   formats:
     pdf:
       pdf-engine: xelatex
+      toc: false
       linkcolor: blue
       urlcolor: blue
       geometry: margin=1in
