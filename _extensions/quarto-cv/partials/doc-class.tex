@@ -22,20 +22,15 @@ $for(classoption)$
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
-\usepackage{CrimsonPro}
-\usepackage[T1]{fontenc}
-%% The font package uses mweights.sty which has som issues with the
-%% \normalfont command. The following two lines fixes this issue.
-\let\oldnormalfont\normalfont
-\def\normalfont{\oldnormalfont\mdseries}
+\usepackage{ebgaramond-maths}
+%\usepackage[T1]{fontenc}
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
 $endif$
-\usepackage{amssymb,amsmath}
+%\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[$if(fontenc)$$fontenc$$else$T1$endif$]{fontenc}
   \usepackage[utf8]{inputenc}
