@@ -1,7 +1,5 @@
 # Quarto-cv Format
 
-This is a work in progress. It should work, but install and use at your own risk! :)
-
 A Quarto template for generating a CV in pdf format. The template is based entirely
 on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetemplates).
 
