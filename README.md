@@ -93,3 +93,9 @@ on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetempl
 licensed under GPL-2. A copy of the pandoc 
 [multiple-bibliographies](https://github.com/pandoc/lua-filters) lua filter 
 licensed under MIT is included as part of this template.
+
+# Release Notes
+
+# v1.0.0
+
+- Initial Release
