@@ -6,7 +6,7 @@ on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetempl
 ## Installing
 
 ```bash
-quarto install template mps9506/quarto-cv
+quarto install extension mps9506/quarto-cv
 ```
 
 This will install the template for use with existing Quarto projects or documents.
