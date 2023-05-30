@@ -96,6 +96,10 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
+# v1.0.9999 (dev)
+
+- Fix README.md install instructions (@anielsen001) [#1](https://github.com/mps9506/quarto-cv/pull/1)
+
 # v1.0.0
 
 - Initial Release
