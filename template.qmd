@@ -15,8 +15,11 @@ orcid: 0000-0002-1825-0097 # orcid identifier
 web: quarto.org
 fontawesome: yes
 nocite: '@*'
-bibliography_peer: peer_bib.bib
-bibliography_other: other_bib.bib
+bibliography: 
+  peer: peer_bib.bib
+  other: other_bib.bib
+validate-yaml: false
+link-citations: false
 csl: apa-cv.csl
 ---
 
@@ -34,12 +37,12 @@ Researcher (Dublin) \hfill 1899-1935
 
 # Publications
 
-::: {#refs_peer}
+::: {#refs-peer}
 :::
 
 # Technical Reports
 
-::: {#refs_other}
+::: {#refs-other}
 :::
 
 
