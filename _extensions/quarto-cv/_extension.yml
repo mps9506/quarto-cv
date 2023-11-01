@@ -12,6 +12,7 @@ contributes:
       linkcolor: blue
       urlcolor: blue
       geometry: margin=1in
+      biblio-config: false
       include-in-header: header.tex
       template: quarto-cv.tex
       template-partials:
