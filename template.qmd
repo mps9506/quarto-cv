@@ -19,7 +19,6 @@ bibliography:
   peer: peer_bib.bib
   other: other_bib.bib
 validate-yaml: false
-link-citations: false
 csl: apa-cv.csl
 ---
 
