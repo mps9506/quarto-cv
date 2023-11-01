@@ -1,5 +1,7 @@
 # Quarto-cv Format
 
+[![quarto-ext-chk](https://github.com/mps9506/quarto-cv/actions/workflows/check-extension.yaml/badge.svg)](https://github.com/mps9506/quarto-cv/actions/workflows/check-extension.yaml)
+
 A Quarto template for generating a CV in pdf format. The template is based entirely
 on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetemplates).
 
@@ -59,23 +61,28 @@ The template includes a lua filter to easily incorporate multiple bibliographies
 In the document yaml header simply point to your `.bib` files and provide a unique name:
 
 ```yaml
-bibliography_peer: peer.bib
-bibliography_reports: reports.bib
-bibliography_books: books.bib
-bibliography_software: software.bib
+bibliography:
+  peer: peer.bib
+  reports: reports.bib
+  books: books.bib
+  software: software.bib
+validate-yaml: false
 ```
 
-Then create different bibliographies for each one:
+Note, that the `validate-yaml` key must be false in quarto because it expects
+a character value when it vaildates the yaml header.
+
+Now create different bibliographies for each one:
 
 ```
 # Journal Articles
 
-::: {#refs_peer}
+::: {#refs-peer}
 :::
 
 # Software
 
-::: {#refs_software}
+::: {#refs-software}
 :::
 ```
 
@@ -91,14 +98,18 @@ Here is the source code for a minimal sample document: [template.qmd](template.q
 The template is based entirely
 on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetemplates)
 licensed under GPL-2. A copy of the pandoc 
-[multiple-bibliographies](https://github.com/pandoc/lua-filters) lua filter 
+[`multibib`](https://github.com/pandoc-ext/multibib) lua filter 
 licensed under MIT is included as part of this template.
 
 # Release Notes
 
-# v1.0.9999 (dev)
+# v1.0.1
 
-- Fix README.md install instructions (@anielsen001) [#1](https://github.com/mps9506/quarto-cv/pull/1)
+- Properly embed [pandoc-ext `multibib`](https://github.com/pandoc-ext/multibib) extension (Fixes [#2](https://github.com/mps9506/quarto-cv/issues/2)).
+- Add CI test for pull requests on main.
+- Add .quartoignore to avoid copying extra files.
+- Fix README.md install instructions (@anielsen001) ([#1](https://github.com/mps9506/quarto-cv/pull/1)).
+- Update tex template for changes to citeproc (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
 
 # v1.0.0
 
