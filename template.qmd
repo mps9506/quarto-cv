@@ -1,0 +1,50 @@
+---
+title: CV
+format:
+  quarto-cv-pdf: default
+author: William Gosset
+date: last-modified
+phone: 123-456-7890
+address: "Guinness Brewery · Park Royal · London NW10 7RR, UK"
+email: guinness@consumer-care.net
+fontsize: 11pt
+#github: github # github account
+orcid: 0000-0002-1825-0097 # orcid identifier
+#osf: ymqui # osf five character id
+#twitter: twitter # twitter handle
+web: quarto.org
+fontawesome: yes
+nocite: '@*'
+bibliography: 
+  peer: peer_bib.bib
+  other: other_bib.bib
+validate-yaml: false
+csl: apa-cv.csl
+---
+
+# Employment
+
+*Arthur Guinness & Son*
+
+Chief Brewer (Park Royal) \hfill 1935-1937
+
+Researcher (Dublin) \hfill 1899-1935
+
+# Education
+
+*New College, Oxford University*, B.A. Chemistry \hfill 1899
+
+# Publications
+
+::: {#refs-peer}
+:::
+
+# Technical Reports
+
+::: {#refs-other}
+:::
+
+
+# References
+
+Available upon request, though likely would include Karl Pearson and Ronald A. Fisher.

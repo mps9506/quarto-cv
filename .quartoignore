@@ -1,0 +1,8 @@
+examples/
+LICENSE
+DESCRIPTION
+.github/
+.gitignore
+screenshots/
+quarto-cv.rproj
+template.pdf
