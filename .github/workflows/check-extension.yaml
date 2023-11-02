@@ -11,6 +11,8 @@ on:
 
 name: quarto-ext-chk
 
+permissions:
+  contents: write
 
 jobs:
   quarto-ext-chk:
