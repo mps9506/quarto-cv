@@ -1,0 +1,46 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+name: quarto-ext-chk
+
+permissions:
+  contents: write
+
+jobs:
+  quarto-ext-chk:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+    
+      - uses: actions/checkout@v3
+      
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+          
+      - run: |
+          quarto check
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: template.qmd
+          
+          
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+          branch: gh-pages
+
