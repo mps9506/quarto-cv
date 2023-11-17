@@ -103,14 +103,18 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
-# v1.0.1
+## v1.0.2 (not released)
+
+- Update tex template for changes to citeproc in pandoc >=3.1.8 (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
+
+## v1.0.1
 
 - Properly embed [pandoc-ext `multibib`](https://github.com/pandoc-ext/multibib) extension (Fixes [#2](https://github.com/mps9506/quarto-cv/issues/2)).
 - Add CI test for pull requests on main.
 - Add .quartoignore to avoid copying extra files.
 - Fix README.md install instructions (@anielsen001) ([#1](https://github.com/mps9506/quarto-cv/pull/1)).
-- Update tex template for changes to citeproc (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
 
-# v1.0.0
+
+## v1.0.0
 
 - Initial Release
