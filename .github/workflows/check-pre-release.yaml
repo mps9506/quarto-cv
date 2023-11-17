@@ -26,6 +26,7 @@ jobs:
       
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
+          version: pre-release
           tinytex: true
           
       - run: |
@@ -35,11 +36,3 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: template.qmd
-          
-          
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: .
-          branch: gh-pages
