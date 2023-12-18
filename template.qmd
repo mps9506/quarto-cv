@@ -8,6 +8,8 @@ phone: 123-456-7890
 address: "Guinness Brewery · Park Royal · London NW10 7RR, UK"
 email: guinness@consumer-care.net
 fontsize: 11pt
+#fontfamily: ebgaramond-maths # default font LaTeX package https://tug.org/FontCatalogue/about.html
+#mainfont: Ubuntu # if you want to use a different locally installed font
 #github: github # github account
 orcid: 0000-0002-1825-0097 # orcid identifier
 #osf: ymqui # osf five character id
