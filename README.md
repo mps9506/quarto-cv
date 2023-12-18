@@ -56,7 +56,8 @@ web: web address (no `https://`)
 
 ### Bibliographies
 
-The template includes a lua filter to easily incorporate multiple bibliographies using `.bib` files if you choose to manage publications this way. This is a good option for separating out book/chapter, journal articles, white papers, datasets, and software.
+The template includes a lua filter to easily incorporate multiple bibliographies using `.bib` files if you choose to manage publications this way. 
+This is a good option for separating out book/chapter, journal articles, white papers, datasets, and software.
 
 In the document yaml header simply point to your `.bib` files and provide a unique name:
 
@@ -87,6 +88,26 @@ Now create different bibliographies for each one:
 ```
 
 You can specify the bibliographic style using the csl variable. By default it points to an APA style sorted by descending date. Other styles can be found [here](https://www.zotero.org/styles).
+
+### Fonts
+
+The default font is EB Garamond. 
+There are two primary methods for changing the font used. 
+First you can use fonts provided through  various [LaTeX font packages](https://tug.org/FontCatalogue/about.html) using the `fontfamily:` yaml key.
+The `fontfamilyoptions:` can optionally be used in conjunction to set the LaTeX font package option.
+This is probably the easiest method if there is a package with the font you want to use.
+
+```yaml
+fontfamily: electrum
+fontfamilyoptions: lf
+```
+The second option is to point the `mainfont:` yaml key to a locally installed font.
+
+```yaml
+mainfont: Ubuntu
+```
+
+Note that `fontfamily:` will override `mainfont:` so specify just one.
 
 
 ## Example
