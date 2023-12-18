@@ -103,9 +103,13 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
-## v1.0.2 (not released)
+## v1.0.3 (not released)
 
 - Update tex template for changes to citeproc in pandoc >=3.1.8 (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
+
+## v1.0.2
+
+- Add user specified fonts (Fixes [#7](https://github.com/mps9506/quarto-cv/issues/7)).
 
 ## v1.0.1
 
