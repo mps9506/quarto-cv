@@ -19,11 +19,22 @@ $for(classoption)$
 ]
 {$documentclass$}
 
+
+% default font
+\usepackage{ebgaramond-maths}
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
-$else$
-\usepackage{ebgaramond-maths}
 %\usepackage[T1]{fontenc}
+$endif$
+% xetex/luatex font selection
+$if(mainfont)$
+  \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
+$endif$
+$if(sansfont)$
+  \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
+$endif$
+$if(monofont)$
+  \setmonofont[$for(monofontoptions)$$monofontoptions$$sep$,$endfor$]{$monofont$}
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
