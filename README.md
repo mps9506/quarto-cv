@@ -5,6 +5,8 @@
 A Quarto template for generating a CV in pdf format. The template is based entirely
 on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetemplates).
 
+![Screenshot of quarto-cv output.](/screenshots/quarto-cv.png)
+
 ## Installing
 
 ```bash
@@ -109,6 +111,19 @@ mainfont: Ubuntu
 
 Note that `fontfamily:` will override `mainfont:` so specify just one.
 
+### Asian scripts
+
+Support for Chinese, Japanese, and other Asian language characters are provided through the `xeCJK` package. The pdf will have to be rendered using xelatex instead of the default luatex:
+
+```yaml
+title: CV
+format:
+  quarto-cv-pdf:
+    pdf-engine: xelatex
+CJKmainfont: Noto Sans CJK JP
+```
+
+The `CJKmainfont:` yaml key should point to a locally installed font.
 
 ## Example
 
@@ -124,9 +139,13 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
-## v1.0.3 (not released)
+## v1.0.4 (not released)
 
 - Update tex template for changes to citeproc in pandoc >=3.1.8 (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
+
+## v1.0.3
+
+- Add support for `xeCJK` (Fixes [#9](https://github.com/mps9506/quarto-cv/issues/9#issuecomment-1871681042)).
 
 ## v1.0.2
 
