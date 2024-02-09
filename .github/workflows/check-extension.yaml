@@ -22,12 +22,12 @@ jobs:
     
     steps:
     
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
-          version: pre-release
+          version: release
           
       - run: |
           quarto check
