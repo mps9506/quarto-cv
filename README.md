@@ -9,6 +9,10 @@ on [Steven Miller's R Markdown templates](https://github.com/svmiller/stevetempl
 
 ## Installing
 
+System Requirements:
+- quarto >= 1.4
+- latex
+
 ```bash
 quarto install extension mps9506/quarto-cv
 ```
@@ -21,6 +25,11 @@ This will install the template for use with existing Quarto projects or document
 quarto use template mps9506/quarto-cv
 ```
 
+If you need to use an old version of quarto, install a previous quarto-cv release:
+
+```bash
+quarto install extension mps9506/quarto-cv@v1.0.3
+```
 
 ## Usage
 
