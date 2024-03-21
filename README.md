@@ -148,9 +148,14 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
-## v1.0.4 (not released)
+## dev
+
+- add support for fontawesome5 (thanks to @fecet [#16](https://github.com/mps9506/quarto-cv/pull/16)).
+
+## v2.0.0
 
 - Update tex template for changes to citeproc in pandoc >=3.1.8 (Fixes [#4](https://github.com/mps9506/quarto-cv/issues/4)).
+- Requires quarto >1.4.
 
 ## v1.0.3
 
