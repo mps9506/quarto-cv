@@ -96,6 +96,8 @@ $endfor$
 
 
 % Make lists without bullets
+$if(bullets)$
+$else$
 \renewenvironment{itemize}{
   \begin{list}{}{
     \setlength{\leftmargin}{1.5em}
@@ -103,7 +105,7 @@ $endfor$
 }{
   \end{list}
 }
-
+$endif$
 
 % Make parskips rather than indent with lists.
 \usepackage{parskip}
