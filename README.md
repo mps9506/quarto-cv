@@ -134,6 +134,13 @@ CJKmainfont: Noto Sans CJK JP
 
 The `CJKmainfont:` yaml key should point to a locally installed font.
 
+### Bullet Point Lists
+By default, lists are displayed without bullet points. To switch on, add the following to the header:
+
+```yaml
+bullets: true
+```
+
 ## Example
 
 Here is the source code for a minimal sample document: [template.qmd](template.qmd).
