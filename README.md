@@ -155,9 +155,10 @@ licensed under MIT is included as part of this template.
 
 # Release Notes
 
-## dev
+## v2.0.1
 
 - add support for fontawesome5 (thanks to @fecet [#16](https://github.com/mps9506/quarto-cv/pull/16)).
+- add support for bulleted lists (thanks to @davidwilby [#18](https://github.com/mps9506/quarto-cv/pull/18)).
 
 ## v2.0.0
 
